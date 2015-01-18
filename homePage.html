@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Matt Bessey's Homepage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Lora|Indie+Flower|Titillium+Web' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="homePage.css">
+    </head>
+    <body>
+       <script src="http://d3js.org/d3.v3.min.js"></script>
+       <script src="homePage.js"></script>
+        
+        <div id='bio'>
+            <img src="webPageImages/profilePicture.png" alt="Profile Picture" height="300" width="298"/>
+            <p>
+               Matt Bessey
+               bes07001@byui.edu
+               <a href="www.linkedin.com/in/besseym5">www.linkedin.com/in/besseym5</a>
+               <span id='AMLink'><a href="homePage.html">About Me</a></span>
+               <span id="AssignmentsLink"><a href="assignments.html">Assignments</a></span>
+            </p>  
+        </div>
+        
+        <div id="aboutMe" onclick="transition()">
+            <span id="AMHeader">About Me...</span>
+            <span id="AMBody">
+            My name is Matt Bessey. I'm a senior studying Computer Science from 
+            Rexburg Idaho. My wife and I have been married 2 and a half years.
+            I love everything nerdy: video games, movies, books, and programming.</span>
+            <img src="webPageImages/engagement.png" alt="engagement picture" width="25%" id="engagement"/>
+            <img src="webPageImages/siblings.png" alt="siblings picture"  width="55%" id="siblings"/>
+             </div>
+        <div id="family">
+            <img src="webPageImages/family.png" alt="family picture"  width=60%" id="familyPic"/>
+        </div>
+        <img src="webPageImages/arrowWhite.png"  width="3%" alt="arrow"  id="arrow"/>
+        <span id="flip">F l i p </span>
+     </body>
+</html>

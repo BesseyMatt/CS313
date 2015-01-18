@@ -1,0 +1,115 @@
+a {color:#000000;} 
+a:visited {color:#000000;}
+a:active {color:#000000;}
+
+body {
+    background-color: #588C7E;
+    width: 1228px;
+    height: 624px;
+}
+
+#bio {
+    margin-top: -593px;
+}
+
+#bio p {
+    width: 248px; 
+    padding-top: 40px; 
+    padding-bottom: 50px;
+    padding-left: 25px; 
+    padding-right: 25px; 
+    background-color: #F2E394;
+    margin-top: -10px; 
+    font-size: 19px;  
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#bio p span {
+    display:block;
+    padding-left: 10px;
+}
+
+#bio p span a{
+    text-decoration: none;
+}
+
+#bio p span:hover{
+    background-color: #8C4646;
+    color: azure;
+}
+#bio p span a:hover{
+    background-color: #8C4646;
+    color: azure;
+}
+
+#AMLink {
+    margin-top: 60px;
+}
+
+#aboutMe {
+    margin-top: -590px; 
+    margin-left: 320px;
+}
+
+#AMHeader {
+    font-size: 50px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#AMBody {
+    font-size: 27px; 
+    display: block; 
+    margin-left: 250px; 
+    margin-right: 50px;  
+    font-family: 'Lora', sans-serif;
+}
+
+#engagement {
+    display: block; 
+    margin-top: -170px;
+}
+
+#siblings {
+    display: block; 
+    margin-top: -150px; 
+    margin-left: 250px;
+}
+
+#family {
+    margin-left: 100px;
+    opacity:0;
+}
+
+#familyPic {
+    display: block; 
+    margin-top: -500px; 
+    margin-left: 325px;
+}
+
+#arrow {
+    margin-top: 20px; 
+    margin-left:1200px;
+}
+
+#flip {
+    float:right; 
+    margin-top:-20px; 
+    margin-right: 30px; 
+    font-size: 20px; 
+    font-family: 'Indie Flower', cursive; 
+    color: azure;
+}
+
+#arrow2 {
+    margin-top: 450px; 
+    margin-left:1200px;
+}
+
+#flip2 {
+    float:right; 
+    margin-top: -20px; 
+    margin-right: 40px; 
+    font-size: 20px; 
+    font-family: 'Indie Flower', cursive; 
+    color: azure;
+}
