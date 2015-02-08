@@ -51,7 +51,7 @@ session_start();
 
               $dbName = "PHP_Movie_Project";
 
-                 /*$openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST');
+                 $openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST');
 
                  if ($openShiftVar === null || $openShiftVar == "")
                  {
@@ -68,7 +68,7 @@ session_start();
                       $dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT'); 
                       $dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
                       $dbPassword = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
-                 } */
+                 } 
                  //echo "host:$dbHost:$dbPort dbName:$dbName user:$dbUser password:$dbPassword<br >\n";
 
                  $db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
