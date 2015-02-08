@@ -1,0 +1,82 @@
+body {
+    background-color: #588C7E;
+    font-family: 'Lora', sans-serif;
+}
+
+form {
+    background-color: #F2AE72;
+     padding: 20px;
+     margin-left: 250px;
+     margin-right: 250px;
+     font-size: 25px;
+     z-index: -1;
+}
+
+#formResults {
+    background-color: #F2AE72;
+     padding: 20px;
+     padding-top: 30px;
+     margin-left: 350px;
+     margin-right: 350px;
+     margin-top: -33px;
+     font-size: 25px;
+     z-index: -1;
+}
+
+#navInfo {
+    background-color: #F2E394;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: -33px;
+    padding-left: 50px;
+}
+
+#navInfo a {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+#navInfo a:hover {
+    background-color: #8C4646;
+    color: white;
+}
+
+h1 {
+    background-color: #F2E394;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 50px;
+    padding-left: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.numbers {
+    float: right;
+}
+
+.percent {
+   
+    font-family: 'Titillium Web', sans-serif;
+    padding-right: 10px;
+}
+
+#databaseInfo {
+    background-color: #F2AE72;
+     padding: 20px;
+     margin-left: 250px;
+     margin-right: 250px;
+     font-size: 25px;
+     z-index: -1;
+}
+.tableTxt {
+    padding-left: 15px;
+    float: right;
+}
+
+.poster {
+    width: 275px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
