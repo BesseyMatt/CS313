@@ -43,7 +43,6 @@ session_start();
             <?php
             function loadDatabase()
             {
-
               $dbHost = "localhost";
               $dbPort = "3306";
               $dbUser = "besseym";
@@ -74,7 +73,6 @@ session_start();
                  $db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
 
                  return $db;
-
             }
 
             try{
