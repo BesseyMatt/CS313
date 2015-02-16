@@ -34,16 +34,19 @@ session_start();
         <div id="navInfo">
             <nav>
                 <a href="moviePHP.php">Like Movies</a>
-                <a href="allMovies.php">All Movies</a>
                 <a href="likedMovies.php">Your Liked Movies</a>
                 <a href="suggestedMovies.php">Your Suggested Movies</a>
+                <?php
+                    echo "<span> Login: " . $_SESSION['login'] . "</span>";
+                    echo "<span><a href='logout.php'>Logout</a></span>"
+                ?>
             </nav>
         </div>
         <div id="databaseInfo">
             <?php
             function loadDatabase()
             {
-              $dbHost = "localhost";
+              $dbHost = "http://php-besseym.rhcloud.com";//"localhost";
               $dbPort = "3306";
               $dbUser = "besseym";
               $dbPassword = "password.";
@@ -80,8 +83,16 @@ session_start();
             {
                 $db = loadDatabase();
 
-                $statement = $db->query("SELECT * FROM movie " . $sqlRequest);
-                $results = $statement->fetchAll(PDO::FETCH_ASSOC);
+                $login = $_SESSION['login'];
+                
+                $statement1 = $db->query("SELECT userId FROM user WHERE username=\"" . $login . "\"");
+                $loginId = $statement1->fetchAll(PDO::FETCH_ASSOC);
+                //$statement = $db->query("SELECT * FROM movie " . $sqlRequest);
+                foreach ($loginId as $lId)
+                {
+                    $statement = $db->query("SELECT DISTINCT * FROM movie as m JOIN likedMovie as lm on m.movieId = lm.movieId WHERE lm.userId =" . $lId['userId']);
+                    $results = $statement->fetchAll(PDO::FETCH_ASSOC);
+                }
 
                 echo "<table>";
 

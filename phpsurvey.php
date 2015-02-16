@@ -1,4 +1,5 @@
 <?php
+
 $hasSubmitted = "HasSubmitted";
 
 if(isset($_SESSION['user']) | isset($_COOKIE[$hasSubmitted]))

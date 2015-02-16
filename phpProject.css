@@ -28,16 +28,20 @@ form {
     margin-left: 250px;
     margin-right: 250px;
     margin-top: -33px;
-    padding-left: 50px;
+    padding-left: 0px;
 }
 
 #navInfo a {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 #navInfo a:hover {
     background-color: #8C4646;
     color: white;
+}
+
+#navInfo span {
+    padding-left: 10px;
 }
 
 h1 {
@@ -79,4 +83,16 @@ h1 {
 a {
     text-decoration: none;
     color: black;
+}
+
+input[type='checkbox'] {
+    -webkit-appearance:none;
+    width:30px;
+    height:30px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+}
+input[type='checkbox']:checked {
+    background: #abd;
 }

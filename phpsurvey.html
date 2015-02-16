@@ -1,0 +1,81 @@
+<?php
+$visitsKey = "visits";
+// get the previous count (if it exists, or set it to 0)
+$count = 0;
+if (isset($_COOKIE[$visitsKey]))
+{
+	$count = $_COOKIE[$visitsKey];
+}
+// increment the count
+$count++;
+// save the new count
+setcookie($visitsKey, $count, time() + 10 * 60);
+$name = "userId";
+$value = "sburton";
+
+//setcookie($name, $value, time() + 10 * 60);
+//setcookie("password", "cs313", time() + 10 * 60);
+
+?>
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>PHP Survey Assignment</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+             <script>
+            function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
+        </script>
+    </head>
+    <body>
+        
+        
+        <form>
+            <div>What is your favorite movie?</div>
+            <input type="radio"> Stars Wars </br>
+            <input type="radio"> Harry Potter </br>
+            <input type="radio"> Avengers </br> </br>
+            
+            <div>What is your favorite movie? 2</div>
+            <input type="radio"> Stars Wars </br>
+            <input type="radio"> Harry Potter </br>
+            <input type="radio"> Avengers </br> </br>
+            
+            <div>What is your favorite movie? 3</div>
+            <input type="radio"> Stars Wars </br>
+            <input type="radio"> Harry Potter </br>
+            <input type="radio"> Avengers </br> </br>
+            
+            <div>What is your favorite movie? 4</div>
+            <input type="radio"> Stars Wars </br>
+            <input type="radio"> Harry Potter </br>
+            <input type="radio"> Avengers </br> </br>
+            
+            <input type="submit"></br>
+        </form>
+        
+        <div>
+		This is a page with cookies
+
+            <?php
+            if (isset($_COOKIE["userId"]))
+            {
+                    echo "Welcome: " . $_COOKIE["userId"];
+            }
+            ?>
+
+	</div>
+
+	<div>
+		You have visited this page <?php echo $count ?> time(s).
+	</div>
+        
+        <div id="demo"> it doesnt work </div>
+            
+        <button onclick="myFunction()">Click me</button>
+    </body>
+</html>
