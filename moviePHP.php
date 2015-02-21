@@ -141,13 +141,13 @@ else if (isset($_SESSION["login"]) && isset($_SESSION["password"]))
             <input type="checkbox" name='movie10' id='movie10' value='Inception'> Inception</br>
             
             <img src='moviePosters/31.jpg' width='200px' height='300px'/>
-            <input type="checkbox" name='movie11' id='movie11' value='The Lord of the Rings: The Fellowship of the Ring'> The Lord of the Rings: The Fellowship of the Ring</br>
+            <input type="checkbox" name='movie11' id='movie11' value=' The Lord of the Rings: The Fellowship of the Ring'> The Fellowship of the Ring</br>
             
             <img src='moviePosters/34.jpg' width='200px' height='300px'/>
-            <input type="checkbox" name='movie12' id='movie12' value='The Hobbit: An Unexpected Journey'> The Hobbit: An Unexpected Journey </br>
+            <input type="checkbox" name='movie12' id='movie12' value=' The Hobbit: An Unexpected Journey'> The Hobbit: An Unexpected Journey </br>
             
             <img src='moviePosters/37.jpg' width='200px' height='300px'/>
-            <input type="checkbox" name='movie13' id='movie13' value='Ocean\'s Eleven'> Ocean's Eleven</br>
+            <input type="checkbox" name='movie13' id='movie13' value='Ocean’s Eleven'> Ocean's Eleven</br>
             
             <input type="submit">
         </form>
