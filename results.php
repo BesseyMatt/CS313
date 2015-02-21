@@ -38,13 +38,10 @@
         }
         $total = $total / 4;
         
-       // $txt = $major . "\n" . $year . "\n" . $status . "\n" . $work . "\n";
-        //fwrite($file, $txt);
-        //fclose($file);
-        
         $hasSubmitted = "HasSubmitted";
         setcookie($hasSubmitted, rand(), time() + 10 * 60);
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -56,30 +53,30 @@
         <h1> Results of the Survey:</h1>
         <div id='formResults'>
             <?php
-          echo "<h2>Total Surveys Counted: " . $total . "</h2>";  
-          echo "<h3>Majors:</h3>";     
-          echo "<div><span class='percent'>" . (int)(($results["Computer Science\n"] / $total) * 100) . "%</span>  Computer Science: <span class='numbers'>" . $results["Computer Science\n"] . "</span></div>";
-          echo "<div><span class='percent'>" . (int)(($results["Computer Engineering\n"] / $total) * 100) . "%</span>  Computer Engineering: <span class='numbers'>" . $results["Computer Engineering\n"] . "</span></div>";
-          echo "<div><span class='percent'>" . (int)(($results["Computer Information Technology\n"] / $total) * 100) . "%</span>  Computer Information Technology: <span class='numbers'>" . $results["Computer Information Technology\n"] . "</span></div>"; 
-          echo "<div><span class='percent'>" . (int)(($results["Web Design and Development\n"] / $total) * 100) . "%</span>  Web Design and Development: <span class='numbers'>" . $results["Web Design and Development\n"] . "</span></div>";
-          echo "<div><span class='percent'>" . (int)(($results["Other Majors\n"] / $total) * 100) . "%</span>  Other Majors: <span class='numbers'>" . $results["Other\n"] . "</div>";
-          
-          echo "<h3>Year in School:</h3>"; 
-          echo "<div><span class='percent'>" . (int)(($results["Freshmen\n"] / $total) * 100) . "%</span>  Freshmen: <span class='numbers'>" . $results["Freshmen\n"] . "</span></div>";
-          echo "<div><span class='percent'>" . (int)(($results["Sophomore\n"] / $total) * 100) . "%</span>  Sophomore: <span class='numbers'>" . $results["Sophomore\n"] . "</span></div>";
-          echo "<div><span class='percent'>" . (int)(($results["Junior\n"] / $total) * 100) . "%</span>  Junior: <span class='numbers'>" . $results["Junior\n"] . "</span></div>";
-          echo "<div><span class='percent'>" . (int)(($results["Senior\n"] / $total) * 100) . "%</span>  Senior: <span class='numbers'>" . $results["Senior\n"] . "</span></div>";
-          echo "<div><span class='percent'>" . (int)(($results["Super Senior\n"] / $total) * 100) . "%</span>  Super Senior: <span class='numbers'>" . $results["Super Senior\n"] . "</span></div>";
-          
-          echo "<h3>Relationship Status:</h3>"; 
-          echo "<div><span class='percent'>" . (int)(($results["Married\n"] / $total) * 100) . "%</span>  Married: <span class='numbers'>" .$results["Married\n"] . "</span></div>";
-          echo "<div><span class='percent'>" . (int)(($results["Single\n"] / $total) * 100) . "%</span>  Single: <span class='numbers'>" . $results["Single\n"] . "</span></div>"; 
-          echo "<div><span class='percent'>" . (int)(($results["Dating\n"] / $total) * 100) . "%</span>  Dating: <span class='numbers'>" . $results["Dating\n"] . "</span></div>"; 
-          echo "<div><span class='percent'>" . (int)(($results["It is Complicated\n"] / $total) * 100) . "%</span>  It is Complicated: <span class='numbers'>" . $results["It is Complicated\n"] . "</span></div>";
-          
-          echo "<h3>Working while going to school:</h3>"; 
-          echo "<div><span class='percent'>" . (int)(($results["Yes\n"] / $total) * 100) . "%</span>  Yes: <span class='numbers'>" . $results["Yes\n"] . "</span></div>"; 
-          echo "<div><span class='percent'>" . (int)(($results["No\n"] / $total) * 100) . "%</span>  No: <span class='numbers'>" . $results["No\n"] . "</span></div>";  
+                echo "<h2>Total Surveys Counted: " . $total . "</h2>";  
+                echo "<h3>Majors:</h3>";     
+                echo "<div><span class='percent'>" . (int)(($results["Computer Science\n"] / $total) * 100) . "%</span>  Computer Science: <span class='numbers'>" . $results["Computer Science\n"] . "</span></div>";
+                echo "<div><span class='percent'>" . (int)(($results["Computer Engineering\n"] / $total) * 100) . "%</span>  Computer Engineering: <span class='numbers'>" . $results["Computer Engineering\n"] . "</span></div>";
+                echo "<div><span class='percent'>" . (int)(($results["Computer Information Technology\n"] / $total) * 100) . "%</span>  Computer Information Technology: <span class='numbers'>" . $results["Computer Information Technology\n"] . "</span></div>"; 
+                echo "<div><span class='percent'>" . (int)(($results["Web Design and Development\n"] / $total) * 100) . "%</span>  Web Design and Development: <span class='numbers'>" . $results["Web Design and Development\n"] . "</span></div>";
+                echo "<div><span class='percent'>" . (int)(($results["Other Majors\n"] / $total) * 100) . "%</span>  Other Majors: <span class='numbers'>" . $results["Other\n"] . "</div>";
+
+                echo "<h3>Year in School:</h3>"; 
+                echo "<div><span class='percent'>" . (int)(($results["Freshmen\n"] / $total) * 100) . "%</span>  Freshmen: <span class='numbers'>" . $results["Freshmen\n"] . "</span></div>";
+                echo "<div><span class='percent'>" . (int)(($results["Sophomore\n"] / $total) * 100) . "%</span>  Sophomore: <span class='numbers'>" . $results["Sophomore\n"] . "</span></div>";
+                echo "<div><span class='percent'>" . (int)(($results["Junior\n"] / $total) * 100) . "%</span>  Junior: <span class='numbers'>" . $results["Junior\n"] . "</span></div>";
+                echo "<div><span class='percent'>" . (int)(($results["Senior\n"] / $total) * 100) . "%</span>  Senior: <span class='numbers'>" . $results["Senior\n"] . "</span></div>";
+                echo "<div><span class='percent'>" . (int)(($results["Super Senior\n"] / $total) * 100) . "%</span>  Super Senior: <span class='numbers'>" . $results["Super Senior\n"] . "</span></div>";
+
+                echo "<h3>Relationship Status:</h3>"; 
+                echo "<div><span class='percent'>" . (int)(($results["Married\n"] / $total) * 100) . "%</span>  Married: <span class='numbers'>" .$results["Married\n"] . "</span></div>";
+                echo "<div><span class='percent'>" . (int)(($results["Single\n"] / $total) * 100) . "%</span>  Single: <span class='numbers'>" . $results["Single\n"] . "</span></div>"; 
+                echo "<div><span class='percent'>" . (int)(($results["Dating\n"] / $total) * 100) . "%</span>  Dating: <span class='numbers'>" . $results["Dating\n"] . "</span></div>"; 
+                echo "<div><span class='percent'>" . (int)(($results["It is Complicated\n"] / $total) * 100) . "%</span>  It is Complicated: <span class='numbers'>" . $results["It is Complicated\n"] . "</span></div>";
+
+                echo "<h3>Working while going to school:</h3>"; 
+                echo "<div><span class='percent'>" . (int)(($results["Yes\n"] / $total) * 100) . "%</span>  Yes: <span class='numbers'>" . $results["Yes\n"] . "</span></div>"; 
+                echo "<div><span class='percent'>" . (int)(($results["No\n"] / $total) * 100) . "%</span>  No: <span class='numbers'>" . $results["No\n"] . "</span></div>";  
             ?>
         </div>
     </body>

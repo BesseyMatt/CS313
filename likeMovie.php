@@ -1,5 +1,4 @@
     <?php   
-              //$movieId  
               $dbHost = "http://php-besseym.rhcloud.com";
               $dbUser = "besseym";
               $dbPassword = "password.";
@@ -11,13 +10,10 @@
                  if ($openShiftVar === null || $openShiftVar == "")
                  {
                       // Not in the openshift environment
-                      //echo "Using local credentials: "; 
-                      //require("setLocalDatabaseCredentials.php");
                  }
                  else 
                  { 
                       // In the openshift environment
-                      //echo "Using openshift credentials: ";
 
                       $dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
                       $dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT'); 
@@ -29,15 +25,13 @@
 
                  return $db;
                  
-            try{
-           
+            try {
                 $db = loadDatabase();
                 
                 $statement = $db->query("SELECT userId FROM user WHERE " . $login . "= name" );
                 $loginId = $statement->fetchAll(PDO::FETCH_ASSOC);
                 
                 $db->query("INSERT into likedMovie (userId, movieId) VALUES (" . $loginId . ", " . $movieId . ")");
-          
             }
             
             catch(PDOException $ex){

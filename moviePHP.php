@@ -17,21 +17,17 @@ if (isset($_REQUEST["login"]) && isset($_REQUEST["password"]))
                  if ($openShiftVar === null || $openShiftVar == "")
                  {
                       // Not in the openshift environment
-                      //echo "Using local credentials: "; 
-                      //require("setLocalDatabaseCredentials.php");
                  }
                  else 
                  { 
                       // In the openshift environment
-                      //echo "Using openshift credentials: ";
 
                       $dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
                       $dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT'); 
                       $dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
                       $dbPassword = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
-                 } 
-                 //echo "host:$dbHost:$dbPort dbName:$dbName user:$dbUser password:$dbPassword<br >\n";
-
+                 }
+                 
                  $db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
 
                  return $db;
@@ -55,7 +51,6 @@ if (isset($_REQUEST["login"]) && isset($_REQUEST["password"]))
                 {
                     //invalid login 
                     echo "<script type='text/javascript'>alert('Invalid Login');</script>";
-                    //header("Location: login.php"); 
                     echo '<script>window.location = "'. "login.php" .'";</script>';
                 }
             }

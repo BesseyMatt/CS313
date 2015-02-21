@@ -66,7 +66,5 @@ $_SESSION['user'] = rand();
             <button onclick='seeResults()'>See Results</button>
         </form>
         
-        
-        
     </body>
 </html>
