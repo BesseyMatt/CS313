@@ -111,46 +111,45 @@ else if (isset($_SESSION["login"]) && isset($_SESSION["password"]))
             <h3>Which Movies do you Like? (Select to received suggestions of other films you might like): </h3>
             
             <img src='moviePosters/1.jpg' width='200px' height='300px'/>
-            <input type="checkbox" name='movie1' id='movie1' background='url(moviePosters/1.jpg)' value='Star Wars: A New Hope'> Star Wars: A New Hope</br>
+            <input type="checkbox" name='movie1' id='movie1' value='Star Wars: A New Hope'> Star Wars: A New Hope</br>
             
             <img src='moviePosters/7.jpg' width='200px' height='300px'/>
-            <input type="checkbox" name='movie2' id='movie2' background='url(moviePosters/7.jpg)' value='Indiana Jones and the Raiders of the Lost Ark'> Raiders of the Lost Ark</br>
+            <input type="checkbox" name='movie2' id='movie2' value='Indiana Jones and the Raiders of the Lost Ark'> Raiders of the Lost Ark</br>
             
             <img src='moviePosters/10.jpg' width='200px' height='300px'/>
-            <input type="checkbox" name='movie3' id='movie3' background='url(moviePosters/10.jpg)' value='Iron Man'> Iron Man</br>
+            <input type="checkbox" name='movie3' id='movie3' value='Iron Man'> Iron Man</br>
             
             <img src='moviePosters/13.jpg' width='200px' height='300px'/>
-            <input type="checkbox" name='movie4' id='movie4' background='url(moviePosters/13.jpg)' value='Thor'> Thor</br>
+            <input type="checkbox" name='movie4' id='movie4' value='Thor'> Thor</br>
             
             <img src='moviePosters/15.jpg' width='200px' height='300px'/>
-            <input type="checkbox" name='movie5' id='movie5' background='url(moviePosters/15.jpg)' value='Captain America: the First Avenger'> Captain America: the First Avenger</br>
+            <input type="checkbox" name='movie5' id='movie5' value='Captain America: the First Avenger'> Captain America: the First Avenger</br>
             
             <img src='moviePosters/18.jpg' width='200px' height='300px'/>
-            <input type="checkbox" name='movie6' id='movie6' background='url(moviePosters/18.jpg)' value='Back To the Future'> Back To the Future</br>
+            <input type="checkbox" name='movie6' id='movie6' value='Back To the Future'> Back To the Future</br>
             
             <img src='moviePosters/19.jpg' width='200px' height='300px'/>
-            <input type="checkbox" name='movie7' id='movie7' background='url(moviePosters/19.jpg)' value='Groundhog Day'> Groundhog Day</br>
+            <input type="checkbox" name='movie7' id='movie7' value='Groundhog Day'> Groundhog Day</br>
             
             <img src='moviePosters/20.jpg' width='200px' height='300px'/>
-            <input type="checkbox" name='movie8' id='movie8' background='url(moviePosters/20.jpg)' value='The Hunger Games'> The Hunger Games</br>
+            <input type="checkbox" name='movie8' id='movie8' value='The Hunger Games'> The Hunger Games</br>
             
             <img src='moviePosters/25.jpg' width='200px' height='300px'/>
-            <input type="checkbox" name='movie9' id='movie9' background='url(moviePosters/25.jpg)' value='Batman Begins'> Batman Begins</br>
+            <input type="checkbox" name='movie9' id='movie9' value='Batman Begins'> Batman Begins</br>
             
             <img src='moviePosters/28.jpg' width='200px' height='300px'/>
-            <input type="checkbox" name='movie10' id='movie10' background='url(moviePosters/28.jpg)' value='Inception'> Inception</br>
+            <input type="checkbox" name='movie10' id='movie10' value='Inception'> Inception</br>
             
             <img src='moviePosters/31.jpg' width='200px' height='300px'/>
-            <input type="checkbox" name='movie11' id='movie11' background='url(moviePosters/31.jpg)' value=' The Lord of the Rings: The Fellowship of the Ring'> The Fellowship of the Ring</br>
+            <input type="checkbox" name='movie11' id='movie11' value=' The Lord of the Rings: The Fellowship of the Ring'> The Fellowship of the Ring</br>
             
             <img src='moviePosters/34.jpg' width='200px' height='300px'/>
-            <input type="checkbox" name='movie12' id='movie12' background='url(moviePosters/34.jpg)' value=' The Hobbit: An Unexpected Journey'> The Hobbit: An Unexpected Journey </br>
+            <input type="checkbox" name='movie12' id='movie12' value=' The Hobbit: An Unexpected Journey'> The Hobbit: An Unexpected Journey </br>
             
             <img src='moviePosters/37.jpg' width='200px' height='300px'/>
-            <input type="checkbox" name='movie13' id='movie13' background='url(moviePosters/37.jpg)' value='Ocean’s Eleven'> Ocean’s Eleven</br>
+            <input type="checkbox" name='movie13' id='movie13' value='Ocean’s Eleven'> Ocean’s Eleven</br>
             
             <input type="submit">
-            
         </form>
     </body>
 </html>
