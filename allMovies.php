@@ -28,7 +28,7 @@ session_start();
               $dbHost = "http://php-besseym.rhcloud.com";
               $dbPort = "3306";
               $dbUser = "besseym";
-              $dbPassword = "password";
+              $dbPassword = "password.";
 
               $dbName = "PHP_Movie_Project";
 

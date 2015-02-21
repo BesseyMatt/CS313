@@ -87,7 +87,7 @@ session_start();
                 
                 $statement1 = $db->query("SELECT userId FROM user WHERE username=\"" . $login . "\"");
                 $loginId = $statement1->fetchAll(PDO::FETCH_ASSOC);
-                //$statement = $db->query("SELECT * FROM movie " . $sqlRequest);
+                
                 foreach ($loginId as $lId)
                 {
                     $statement = $db->query("SELECT DISTINCT * FROM movie as m JOIN likedMovie as lm on m.movieId = lm.movieId WHERE lm.userId =" . $lId['userId']);
@@ -117,8 +117,7 @@ session_start();
             catch(PDOException $ex){
                 echo "ERROR:$ex";
             }
-
-
+            
             ?>
         </div>
     </body>

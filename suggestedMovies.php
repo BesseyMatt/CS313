@@ -1,8 +1,6 @@
 <?php
 session_start();
 
- //if(!isset($_SESSION['movies']))
- //{
     $count = 0;
     $movies = array(6);
     
@@ -41,14 +39,7 @@ session_start();
         $movies[$count] = $_REQUEST["movie6"];
         $count++;
     }
-    $_SESSION['movies'] = $movies;
-// }
- 
- //else {
-   //  $movies = $_SESSION['movies'];
- //}
-
-    
+    $_SESSION['movies'] = $movies;    
 ?>
 
 <!DOCTYPE html>
@@ -112,8 +103,6 @@ session_start();
 
             try{
                 
-           // if (!isset($_SESSION['suggestions']))
-           // {
                 $db = loadDatabase();
                 $login = $_SESSION['login'];
                
@@ -151,15 +140,6 @@ session_start();
                     $results = $statement3->fetchAll(PDO::FETCH_ASSOC);
 
                 }
-               //$db->query("SELECT * FROM movie as m JOIN movieToSuggest as mts ON m.movieId = mts.movie1Id JOIN movie as m2 ON mts.movie2Id = m2.movieId" . $sqlRequest);
-           
-                //$_SESSION['suggestions'] = $results;
-            //}
-            
-            //else
-            //{
-               // $results = $_SESSION['suggestions'];
-            //}
             
             echo "<table>";
                 foreach ($results as $movie)

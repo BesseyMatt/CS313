@@ -77,10 +77,6 @@ else if (isset($_SESSION["login"]) && isset($_SESSION["password"]))
      echo '<script>window.location = "'. "login.php" .'";</script>';
  }
 
-/*if (isset($_SESSION['movies']))
-{
-    header("Location: suggestedMovies.php");
-}*/
 ?>
 
 <!DOCTYPE html>
@@ -131,6 +127,27 @@ else if (isset($_SESSION["login"]) && isset($_SESSION["password"]))
             
             <img src='moviePosters/18.jpg' width='200px' height='300px'/>
             <input type="checkbox" name='movie6' id='movie6' value='Back To the Future'> Back To the Future</br>
+            
+            <img src='moviePosters/19.jpg' width='200px' height='300px'/>
+            <input type="checkbox" name='movie7' id='movie7' value='Groundhog Day'> Groundhog Day</br>
+            
+            <img src='moviePosters/20.jpg' width='200px' height='300px'/>
+            <input type="checkbox" name='movie8' id='movie8' value='The Hunger Games'> The Hunger Games</br>
+            
+            <img src='moviePosters/25.jpg' width='200px' height='300px'/>
+            <input type="checkbox" name='movie9' id='movie9' value='Batman Begins'> Batman Begins</br>
+            
+            <img src='moviePosters/28.jpg' width='200px' height='300px'/>
+            <input type="checkbox" name='movie10' id='movie10' value='Inception'> Inception</br>
+            
+            <img src='moviePosters/31.jpg' width='200px' height='300px'/>
+            <input type="checkbox" name='movie11' id='movie11' value='The Lord of the Rings: The Fellowship of the Ring'> The Lord of the Rings: The Fellowship of the Ring</br>
+            
+            <img src='moviePosters/34.jpg' width='200px' height='300px'/>
+            <input type="checkbox" name='movie12' id='movie10' value='The Hobbit: An Unexpected Journey'> The Hobbit: An Unexpected Journey </br>
+            
+            <img src='moviePosters/37.jpg' width='200px' height='300px'/>
+            <input type="checkbox" name='movie13' id='movie10' value='Ocean\'s Eleven'> Ocean's Eleven</br>
             
             <input type="submit">
         </form>

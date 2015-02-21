@@ -1,5 +1,4 @@
-    <?php
-        
+    <?php   
               //$movieId  
               $dbHost = "http://php-besseym.rhcloud.com";
               $dbUser = "besseym";
