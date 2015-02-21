@@ -87,16 +87,12 @@ a {
 
 input[type='checkbox'] {
     -webkit-appearance:none;
-    width:200px;
-    height:300px;
-    //background:white;
-    background: transparent url(moviePosters/17.jpg) no-repeat 0 50%;
+    width:30px;
+    height:30px;
+    background:white;
     border-radius:5px;
     border:2px solid #555;
 }
 input[type='checkbox']:checked {
-    width:200px;
-    height:300px;
-    
-    background: transparent url(moviePosters/17.jpg) no-repeat 80% 50%; //#abd;
+    background: url(moviePosters/13.jpg) no-repeat//#abd;
 }
