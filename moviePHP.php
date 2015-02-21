@@ -130,7 +130,7 @@ else if (isset($_SESSION["login"]) && isset($_SESSION["password"]))
             <input type="checkbox" name='movie14' id='movie14' value='Guardians of the Galaxy'>
             <input type="checkbox" name='movie15' id='movie15' value='Interstellar'>
             
-            <input type="submit">
+            <input id="likeSubmit" type="submit">
         </form>
     </body>
 </html>
