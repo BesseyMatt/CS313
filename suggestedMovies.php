@@ -93,6 +93,7 @@ session_start();
                 <a href="moviePHP.php">Like Movies</a>
                 <a href="likedMovies.php">Your Liked Movies</a>
                 <a href="suggestedMovies.php">Your Suggested Movies</a>
+                
                  <?php
                     echo "<span> Login: " . $_SESSION['login'] . "</span>";
                     echo "<span><a href='logout.php'>Logout</a></span>"
@@ -129,8 +130,7 @@ session_start();
                       $dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
                       $dbPassword = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
                  } 
-                 //echo "host:$dbHost:$dbPort dbName:$dbName user:$dbUser password:$dbPassword<br >\n";
-
+    
                  $db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
 
                  return $db;

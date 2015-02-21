@@ -46,7 +46,7 @@ session_start();
             <?php
             function loadDatabase()
             {
-              $dbHost = "http://php-besseym.rhcloud.com";//"localhost";
+              $dbHost = "http://php-besseym.rhcloud.com";
               $dbPort = "3306";
               $dbUser = "besseym";
               $dbPassword = "password.";
