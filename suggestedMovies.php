@@ -75,6 +75,23 @@ session_start();
         $movies[$count] = $_REQUEST["movie12"];
         $count++;
     }
+    
+    if (isset($_REQUEST["movie13"]))
+    {
+        $movies[$count] = $_REQUEST["movie13"];
+        $count++;
+    }
+    if (isset($_REQUEST["movie14"]))
+    {
+        $movies[$count] = $_REQUEST["movie14"];
+        $count++;
+    }
+    
+    if (isset($_REQUEST["movie15"]))
+    {
+        $movies[$count] = $_REQUEST["movie15"];
+        $count++;
+    }
     $_SESSION['movies'] = $movies;    
 ?>
 
