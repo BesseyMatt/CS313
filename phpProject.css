@@ -102,41 +102,67 @@ input[type='checkbox']:checked {
 }
 
 #movie1{
+    width:200px;
+    height:300px;
     background: url(moviePosters/1.jpg);
 }
 #movie2{
+    width:200px;
+    height:300px;
     background: url(moviePosters/7.jpg);
 }
 #movie3{
+    width:200px;
+    height:300px;
     background: url(moviePosters/10.jpg);
 }
 #movie4{
+    width:200px;
+    height:300px;
     background: url(moviePosters/13.jpg);
 }
 #movie5{
+    width:200px;
+    height:300px;
     background: url(moviePosters/15.jpg);
 }
 #movie6{
+    width:200px;
+    height:300px;
     background: url(moviePosters/18.jpg);
 }
 #movie7{
+    width:200px;
+    height:300px;
     background: url(moviePosters/19.jpg);
 }
 #movie8{
+    width:200px;
+    height:300px;
     background: url(moviePosters/20.jpg);
 }
 #movie9{
+    width:200px;
+    height:300px;
     background: url(moviePosters/25.jpg);
 }
 #movie10{
+    width:200px;
+    height:300px;
     background: url(moviePosters/28.jpg);
 }
 #movie11{
+    width:200px;
+    height:300px;
     background: url(moviePosters/31.jpg);
 }
 #movie12{
+    width:200px;
+    height:300px;
     background: url(moviePosters/34.jpg);
 }
 #movie13{
+    width:200px;
+    height:300px;
     background: url(moviePosters/37.jpg);
 }
