@@ -100,7 +100,9 @@ input[type='checkbox']:checked {
 }
 
 #likeSubmit {
-    width: 20em;  height: 2em;
+    width: 20em;  
+    height: 5em;
+    margin-left: 300px;
 }
 
 #movie1{
