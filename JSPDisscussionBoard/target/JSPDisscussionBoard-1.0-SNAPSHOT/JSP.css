@@ -1,0 +1,22 @@
+.wholePost {
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    
+    margin-right: 700px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#post {
+    padding-left: 25px;
+}
+
+#user {
+    text-decoration: underline;
+}
+
+#time {
+    font-style: italic;
+}
+
