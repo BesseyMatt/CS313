@@ -8,6 +8,6 @@
         <title>WOW API Coding Test</title>
     </head>
     <body>
-        <h1>Hello Blizzard Automation Team!</h1>
+        <h1>Hello Blizzard Automation Team!</h1>  
     </body>
 </html>

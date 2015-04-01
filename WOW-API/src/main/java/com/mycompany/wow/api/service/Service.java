@@ -34,10 +34,10 @@ public class Service {
     //returnTheAboutPage() - This method returns the about me page; 
     //including my name and a link to the source code
     @GET
-    @Path("about/")
+    @Path("about")
     @Produces(MediaType.APPLICATION_JSON)
     public String returnTheAboutPage(){
-        return "{ \"author\" : \"Matthew Bessey Applicant\", \"source\" : \"https://github.com/BesseyMatt/CS313/WOW-API\" }";
+        return "{ \"author\" : \"Matthew Bessey Applicant\", \"source\" : \"https://github.com/BesseyMatt/CS313/tree/master/WOW-API\" }";
     }
     
     //getCharactersfromAccountJSON() - This method returns a List of 
@@ -78,7 +78,7 @@ public class Service {
 
             WOWAccount account = new WOWAccount();
             account.setName(accountName);
-            account.setLink("jbossews-besseym.rhcloud.com/WOW-API/rest/service/account" + accountName);
+            account.setLink("jbossews-besseym.rhcloud.com/WOW-API/rest/service/account/" + accountName);
             account.setIsActive(true);
 
             //This ensure that the account name is unique

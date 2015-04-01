@@ -14,6 +14,7 @@ import org.hibernate.Hibernate;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
 
 /**
  *
@@ -76,6 +77,7 @@ public class AccountDao {
         
         catch(Exception ex){
             System.out.println(ex);
+            
             
             if (session != null) {
                 session.getTransaction().rollback();
