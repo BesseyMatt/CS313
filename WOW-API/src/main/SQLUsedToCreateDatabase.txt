@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS wowapi;
+
+Use wowapi;
+
+CREATE TABLE WOWAccount ( accountId INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL, accountName VARCHAR(255) NOT NULL, link VARCHAR(255) NOT NULL, isActive BOOLEAN DEFAULT TRUE);
+
+insert into WOWAccount  (accountName, link,  isActive) values ('testaccount', ' http://jbossews-besseym.rhcloud.com/WOW-API/rest/service/account/testaccount', true );
+insert into WOWAccount  (accountName, link,  isActive) values ('testaccount2', ' http://jbossews-besseym.rhcloud.com/WOW-API/rest/service/account/testaccount', true);
+
+CREATE TABLE WOWCharacter (characterId INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL, characterName VARCHAR(255) NOT NULL, race VARCHAR(255) NOT NULL, class VARCHAR(255) NOT NULL, faction VARCHAR(255) NOT NULL, level VARCHAR(255) NOT NULL, link VARCHAR(255), isActive BOOLEAN DEFAULT TRUE, accountId INT unsigned NOT NULL, FOREIGN KEY (accountId) REFERENCES WOWAccount(accountId));
+
+insert into WOWCharacter ( accountId ,  characterName,  race,  class , faction,  level, isActive) values (1, 'Motheaten', 'Human', 'Mage',  'Alliance', 100, true);
+insert into WOWCharacter ( accountId ,  characterName,  race,  class , faction,  level, isActive) values (1, 'Weatherworn', 'Gnome', 'Warrior',  'Alliance', 100, true);
+insert into WOWCharacter ( accountId ,  characterName,  race,  class , faction,  level, isActive) values (2, 'Oldbess', 'Worgen', 'Warrior',  'Alliance', 100, true);
+
+
